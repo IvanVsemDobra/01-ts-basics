@@ -7,7 +7,6 @@
 // body: рядок
 // 3. Типізуй axios.get, щоб вказати, що API повертає масив постів.
 
-
 import axios from "axios";
 
 interface Post {
@@ -18,7 +17,7 @@ interface Post {
 
 async function fetchPosts(): Promise<Post[]> {
   const response = await axios.get<Post[]>(
-    '<https://jsonplaceholder.typicode.com/posts>'
+    "<https://jsonplaceholder.typicode.com/posts>"
   );
   return response.data;
 }
