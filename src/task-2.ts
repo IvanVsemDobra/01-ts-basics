@@ -6,12 +6,12 @@
 // Типізуй змінну product за допомогою створеного інтерфейсу.
 // Залиш властивості обʼєкта product і їх значення без змін.
 
-interface User {
-  id: number;
+interface Product {
+  readonly id: number;
   title: string;
   description?: string;
 }
-const product: User = {
+const product: Product = {
   id: 1,
   title: "Tablet",
   description: "Compact and fast",
